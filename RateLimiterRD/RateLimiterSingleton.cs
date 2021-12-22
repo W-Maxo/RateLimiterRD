@@ -59,7 +59,7 @@ namespace RateLimiterRD
                     _ = await Database.SortedSetAddAsync(key, current_time.Ticks, current_time.Ticks); //ZADD
                     _ = await Database.KeyExpireAsync(key, current_time.AddSeconds(window)); //EXPIRE Устанавливаем время жизни
 
-                    return false; //Возвращаем что не просрочено
+                    return false; //Возвращаем что не превышен
                 }
             }
 
