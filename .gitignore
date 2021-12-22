@@ -1,0 +1,6 @@
+/bin/
+RateLimiterRD/obj/
+RateLimiterRD/bin/
+RateLimiterRD/appsettings.json
+.git.zip
+.vs/
